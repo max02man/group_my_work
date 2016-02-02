@@ -1,13 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="dStore">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <title> How To Work It </title>
 </head>
-<body>
+<body ng-controller="StoreController2 as store">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
 <div class="navbar navbar-inverse navbar-static-top">
@@ -35,19 +39,9 @@
 </div>
 <div class="container">
 <div class="row">
-	<div class="col-xs-4">
-	<h3>Heading</h3>
-		<p>These are designs only… it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like.</p>
-<a hrel="#" class= "btn btn-defult">Read more</a>
-	</div>
-	<div class="col-xs-4">
-	<h3>Heading</h3>
-		<p>These are designs only… it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like.</p>
-<a hrel="#" class= "btn btn-defult">Read more</a>
-	</div>
-<div class="col-xs-4">
-	<h3>Heading</h3>
-	<p>These are designs only… it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like.</p>
+	<div class="col-xs-4" ng-repeat="detail in store.details">
+	<h3>{{detail.heading}}</h3>
+		<p>{{detail.detail}}</p>
 <a hrel="#" class= "btn btn-defult">Read more</a>
 	</div>
 </div>
