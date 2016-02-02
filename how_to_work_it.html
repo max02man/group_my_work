@@ -42,11 +42,30 @@
 	<div class="col-xs-4" ng-repeat="detail in store.details">
 	<h3>{{detail.heading}}</h3>
 		<p>{{detail.detail}}</p>
-<a hrel="#" class= "btn btn-defult">Read more</a>
 	</div>
 </div>
 </div>
 <div class="container">
+	<section class="tab"  ng-controller="TabController as tab">
+		<ul class="nav navbar-pills">
+		<li ng-class="{active: tab.isSet(1)}"><a href ng-click="tab.setTab (1)"> Food</a></li>
+		<li ng-class="{active: tab.isSet(2)}"><a href ng-click="tab.setTab (2)"> Drinks</a></li>
+		<li ng-class="{active: tab.isSet(3)}"><a href ng-click="tab.setTab (3)"> Cars</a></li>
+		</ul>
+
+		<div ng-show="tab.isSet(1)">
+          <h4>Food</h4>
+         <blockquote> <img src="images/gem-01.jpg" height="100" width="100"/></blockquote>
+        </div>
+        <div ng-show="tab.isSet(2)">
+          <h4>Drinks</h4>
+          <blockquote><img src="images/gem-02.jpg "height="100" width="100"/></blockquote>
+        </div>
+        <div ng-show="tab.isSet(3)">
+          <h4>Cars</h4>
+          <blockquote><img src="images/gem-03.jpg"height="100" width="100"/></blockquote>
+        </div>
+	</section>
 <p>Bootlint is the official Bootstrap HTML linter tool. It automatically checks for several common HTML mistakes in webpages that are using Bootstrap in a fairly "vanilla" way. Vanilla Bootstrap's components/widgets require their parts of the DOM to conform to certain structures. Bootlint checks that instances of Bootstrap components have correctly-structured HTML. Consider adding Bootlint to your Bootstrap web development toolchain so that none of the common mistakes slow down your project's development.</p>
 </div>
 
