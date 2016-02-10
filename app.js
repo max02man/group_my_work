@@ -31,8 +31,9 @@
   
   
 var det =[{
-heading:'heading',
-detail: "These are designs only … it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like."},
+heading:'homework5',
+detail: "These are designs only … it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like.",
+url: "https://github.com/max02man/hw5/blob/master/index.html"},
 { heading: 'Zircon',
 detail: "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem."},
 {heading:'heading',
