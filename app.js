@@ -31,11 +31,12 @@
   
   
 var det =[{
-heading:'homework5',
-detail: "These are designs only … it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like.",
+heading:'JSON HW5',
+detail: "Using JQuery, BootStrap, and Angular.js to build a page.",
 url: "http://max02man.github.io/hw5"},
-{ heading: 'Zircon',
-detail: "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem."},
+{ heading: 'Node.js HW6',
+detail: "Whats Node.js??",
+url:"http://max02man.github.io/hw6}"},
 {heading:'heading',
 detail: "These are designs only … it’s a rough idea of what it should look like. You have full liberty to mess with this. Include any navigation you like."},
 {heading:'heading',
